@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-size: 24px;
+  color: #707070;
+}
+
+.files {
+  margin-top: 16px;
+}
+
+.file {
+  padding-left: 80px;
+}
+
+.file:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.file.selected {
+  color: white;
+  background-color: #223A70;
+  text-decoration: none;
+  cursor: default;
+}
