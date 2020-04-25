@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>hostly</title>
   </head>
   <body>
     <main>
-      <div id="files" class="files">
-        <div class="file selected">hosts.org</div>
-        <div class="file">local.hst</div>
-        <div class="file">staging.hst</div>
-        <div class="file">production.hst</div>
+      <div>
+        <label>
+          パスワード
+        </label>
+        <input type="password" id="password" />
       </div>
+      <div id="files" class="files"></div>
     </main>
 
-    <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
 </html>
